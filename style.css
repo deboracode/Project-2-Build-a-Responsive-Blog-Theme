@@ -1,0 +1,102 @@
+header {
+  text-align: center;
+  background: url("https://i.pinimg.com/originals/85/a1/40/85a14068d4a89b91fd3e69857d494cec.png");
+  background-size: cover;
+  color: white;
+  }
+a {
+  color: red;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: green;
+  background-color: rgb(152, 255, 152);
+      }
+img {
+  margin: 40px 0px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+hr {
+  margin: 50px 0;
+}
+
+.container {
+  margin: 40px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  float: left;
+  padding: .65em 1em;
+  border: 1px solid green;
+  background-color: white;
+  color: green;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+}
+
+.menu li:hover {
+  background-color: #104108;
+}
+
+li ul {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 150px;
+  display: none;
+  z-index: 1;
+}
+
+li ul li {
+  width: 100%;
+}
+
+li:hover ul {
+  display: block;
+}
+
+li.has-submenu:after {
+  content: "\25bc";
+  font-size: .7em;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+li.has-submenu:hover:after {
+  content: "\25b2";
+}
+li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  }
+article {
+      max-width: 400px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+footer {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+      @media (max-width: 500px) {
+      body {
+      background: red;
+      }
+/* At first I used "width: 400px;" to make it narrowed and centered, so it was easier to read. But the max-width gave it a responsive twist, which means the article elements can be smaller than 400px, but not any larger. */
